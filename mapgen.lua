@@ -152,9 +152,9 @@ local function generate_claylike(data, varea, name, minp, maxp, seed, chance, mi
 		end
 	end
 end
-
-local seed = minetest.get_mapgen_setting("seed")
 ]]--
+local seed = minetest.get_mapgen_setting("seed")
+
 
 -- Generate desert stone with iron in derset.
 minetest.register_ore({

@@ -1,4 +1,4 @@
-
+--[[
 -- Some local constants to use for mapgen
 local c_air     = minetest.CONTENT_AIR
 local c_ignore  = minetest.CONTENT_IGNORE
@@ -154,7 +154,7 @@ local function generate_claylike(data, varea, name, minp, maxp, seed, chance, mi
 end
 
 local seed = minetest.get_mapgen_setting("seed")
-
+]]--
 
 -- Generate desert stone with iron in derset.
 minetest.register_ore({
@@ -245,7 +245,7 @@ minetest.register_ore({
 	},
 })
 
-
+--[[
 -- Generate strati
 local dbuf = {} --for mapgen
 local function generate_strati(minp, maxp, seed)
@@ -303,3 +303,4 @@ local function generate_strati(minp, maxp, seed)
 end
 
 minetest.register_on_generated(generate_strati)
+]]---
